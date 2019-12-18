@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <link rel="icon" sizes="500x500" href="favicon.png">
+   <title>Регистрация</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css" type="text/css"  >
+    <link rel="stylesheet" href="registration.css" type="text/css"  >
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <header>
+     <img src="img/logo.png" class="logo">
+	 <input type="checkbox" name="toggle" id="menu1" class="checkbox1">
+	 <label for="menu1" class="knopka"></label>
+	 <ul class="navigation">
+         <li><a href="index.html" >Главная</a></li>
+         <li><a href="enter.html" >Войти</a></li>
+         <li><a href="" class="opened">Зарегистрироваться</a></li>
+     </ul>
+</header>
+<div class="container">
+	 <ul class="breadcrumb">
+	     <li><a href="index.html">Главная</a></li>
+         <li class="active">Регистрация</li>
+     </ul>
+	 
+	 <div class="site-signup">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p style="color: black;">Если у вас <b>уже есть</b> уже есть аккаунт, вы можете просто войти
+                        <br><br>
+                        <a class="btn btn-primary" href="enter.html">войти</a>
+					    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    
+     <h1>Регистрация</h1>
+     <p>Пожалуйста, заполните поля ниже:</p>
+        <div class="row">
+            <div class="col-lg-5">
+                <form id="form-signup" action="/index.php?r=site%2Fsignup" method="post">
+                         <!-- <input type="hidden" name="_csrf-frontend" value="jbMR7k2cLTqZuEtn5q_e7FHXlh05wnWN3f_N7cuDFCzj_3eeDtNLd6rwKTal2b2aF7D0KH2UOb2Kr6-Zo-ZVSQ=="> -->
+                    <div class="form-group field-signupform-username required ">
+                         <label class="control-label" for="signupform-username">Имя пользователя</label>
+                         <input type="text" id="signupform-username" class="form-control" name="signupform[username]" autofocus="" aria-required="true" aria-invalid="true">
+                         <p class="help-block help-block-error">Необходимо заполнить «Имя пользователя».</p>
+                    </div>
+				    <div class="form-group field-signupform-email required">
+                         <label class="control-label" for="signupform-email">Email</label>
+                         <input type="text" id="signupform-email" class="form-control" name="SignupForm[email]" aria-required="true">
+                         <p class="help-block help-block-error">Необходимо заполнить «Email».</p>
+                    </div>										
+                    <div class="form-group field-signupform-password required">
+                         <label class="control-label" for="signupform-password">Пароль</label>
+                         <input type="password" id="signupform-password" class="form-control" name="SignupForm[password]" value="" aria-required="true">
+                         <p class="help-block help-block-error">Необходимо заполнить «Пароль».</p>						 
+                    </div>                     
+                    <div class="form-group">
+                         <button type="submit" class="btn btn-primary" name="signup-button">Зарегистрироваться</button>              
+			        </div>
+                 </form>        
+			</div>
+        </div>
+    </div>
+	
+</div>
+<footer><div>© Волконская 2019</div></footer> 
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+  </body>
+</html>

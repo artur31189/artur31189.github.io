@@ -1,0 +1,239 @@
+html {
+	padding: 0;
+}
+body {
+	padding: 0;
+	background-color: #2E3438;	
+}
+.checkbox1 {
+	display: none;
+}
+
+.row .col-sm-4 {
+	min-height: 360px;
+	
+}
+.row .col-sm-8 {
+	min-height: 345px;
+	overflow: hidden;
+}
+.col-sm-4, .col-sm-8 {
+	 /* border: 1px solid red;  */
+	font-size: 2em;
+	font-style: italic;
+	color: #5C1301;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-shadow: 2px 2px 3px #712A16;
+	
+}
+.col-sm-4 img {
+	border: 3px solid #602700;
+	border-radius: 15px;
+	box-shadow:  5px 0 5px #602700,
+	-5px 0 5px #602700;
+	
+	
+}
+.col-sm-8 h2 {
+	font-weight: bold;
+
+}
+.row {
+	/* border: 1px solid red; */
+	width: 100%;
+	padding-top: 1px;
+	background-color: #8A410B;
+	box-shadow:  5px 0 5px #602700,
+	-5px 0 5px #602700;
+	
+	
+}
+header {
+	width: 100%;
+    height: 110px;
+	background-color: black;
+	padding: 0px;
+	
+}
+
+.img-responsive {	
+    
+	position: absolute;
+	margin: auto;
+	left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.col-sm-4 {
+	vertical-align: middle;
+}
+.logo {
+	 width: auto;
+	margin-top: 0;
+	
+}
+ul.navigation {
+     list-style-type: none;
+     padding: 0;
+     margin: 40px;
+	 margin-left: 1px;
+	 margin-top: 45px;
+	 margin-right: 2.5%;
+	 float: right;
+	 font-size: 1.2em;
+	 
+}
+.navigation li {
+	display: inline;
+}
+.navigation a {
+	 border: 1px solid #240F02;
+     border-radius: 5px;
+     padding:10px 20px 10px 20px;
+     background-color: #373534;
+     text-decoration: none;
+     color: white;
+	 font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navigation a:hover {
+	background-color: #3F413B;
+	color: #BCA9A9;
+}
+.navigation a:focus {
+	background-color: #6C645F;
+	color: #240602;
+}
+.navigation .opened {
+	background-color: #6C645F;
+	color: #240602;
+}
+footer {
+	height: 100px;
+	width: 100%;
+	background-color: black;
+}
+footer div {
+	display: inline-block;
+	color: white;
+    margin-left: 90px;
+	margin-top: 30px;
+	
+	font-size: 1.5em;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	
+	
+}
+@media (min-width: 768px) and (max-width:1024px) {
+	.navigation a{
+	 border: 1px solid #240F02;
+     
+     padding:7px 13px 7px 13px;
+     background-color: #373534;
+     text-decoration: none;
+     color: white;
+	}
+}
+	
+
+@media (max-width: 767px){
+	ul.navigation  {
+		 display: block; 
+		 width: 100%; 		 
+		 margin: 0;
+		 border-bottom: 1px solid #240F02;
+		 font-size: 1.5em; 	
+		 overflow: auto;
+		 max-height: 0;
+		 transition: max-height 1.5s;
+		  position: absolute;
+		  z-index: 2;
+		  left: 0;
+		 top: 100px;
+	}
+	.navigation a{
+		 display: block;
+		 border-radius: 0;
+		 padding: 15px 10px 15px 10px;
+		 width: 100%;
+		 font-family: Georgia, 'Times New Roman', Times, serif;
+	}
+	
+	 input.checkbox1:checked + label.knopka{
+		 background-color: red;
+		 color: blue;
+	 }
+	 input.checkbox1:checked ~ ul.navigation {	
+		 max-height: 500px;		 
+	 }
+	 input.checkbox1:checked ~ .navigation a{
+	     
+	 }
+	.knopka {
+	 background-image: url(img/menu.png);
+	 background-size: cover;
+	 background-color: gray;
+	 width: 45px;
+	 height: 40px;
+	 display: inline-block;
+	 
+	 padding: 15px;
+	 display: inline-block;
+	 position: absolute;
+	 top: 5%;
+	 left: 82%;
+	 border-radius: 6px;
+     }	 
+	.tl, .tr, .kl, .kr {
+		position: relative;		
+	}
+	.kr.mov {
+		top: -350px;
+	}
+	.tl.mov {
+		top: 350px;
+	}
+	
+	.logo {
+		 display: block;
+         max-width: 70%;
+		 height: auto;
+	}
+	header {    
+		 height: 100px;
+		 padding: 0;
+	}		
+	.row .col-sm-4 {
+		height: 360px;
+	}
+	.row .col-sm-8 {
+		height: 360px;
+		font-size: 1.8em;
+		line-height: 30px;
+	}
+	
+	.row {	
+     width: auto;
+     height: auto;	 
+     }
+	.img-responsive {
+		margin: auto;
+	    left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+	}
+.col-sm-4 img {
+	border: 4px solid #602700;
+	margin-top: 1px;
+}
+footer div {
+	display: inline-block;
+	color: white;
+    margin-left: 70px;
+	margin-top: 30px;
+	
+	font-size: 1.5em;
+	font-family: Georgia, 'Times New Roman', Times, serif;	
+}
+}
